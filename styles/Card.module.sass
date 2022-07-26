@@ -1,0 +1,132 @@
+$main-color: #22BF86
+
+.card
+    min-height: 25rem
+    padding: 2.25rem 1.1rem 1.8rem 1.1rem
+    margin: 1.3rem 0 0 1.5rem
+    min-width: 20rem
+    max-width: 20rem
+    background: #FFFFFF 0% 0% no-repeat padding-box
+    box-shadow: 0px 6px 32px #0E2A6029
+    border-radius: 8px
+    opacity: 1
+
+.title
+    text-align: left
+    color: #303030
+    font-family: 'Roboto Condensed'
+    font-size: 0.9rem
+    margin-top: 0.3rem
+    span
+        font-size: 0.7rem
+        color: $main-color
+        vertical-align: top
+
+.vin
+    text-align: left
+    letter-spacing: 0.1em
+    color: #707B8C
+    opacity: 1
+    font-size: 0.5rem
+    font-family: 'Roboto'
+
+.slider
+    height: 9.9rem
+    margin-top: 0.95rem
+    margin-bottom: 0.9rem
+    width: 100%
+    overflow: hidden
+    position: relative
+
+.slider_inner
+    display: flex
+    transition: transform 0.7s
+    height: 100%
+
+.slider_item
+    position: relative
+    border-radius: 4px
+    overflow: hidden
+    margin-right: 0.6rem
+    flex: 0 0 74%
+    display: flex
+    height: 100%
+    img
+        width: 100%
+
+.descr
+    display: flex
+    justify-content: flex-start
+    width: 100%
+    flex-wrap: wrap
+    &_title
+        padding: 0
+        text-align: left
+        font-size: 0.5rem
+        letter-spacing: 0.1em
+        color: #ACB8BF
+        text-transform: uppercase
+    &_value
+        padding: 0
+        text-align: left
+        font-size: 0.7rem
+        margin-top: 0.43em
+        span
+            color: $main-color
+    &_item
+        min-width: 50%
+        margin-bottom: 0.9rem
+        &_package
+            width: 100%
+            .descr_value
+                span
+                    font-size: 0.6rem
+                    letter-spacing: 0.12em
+                    color: #707B8C
+
+.price_block
+    display: flex
+    justify-content: space-between
+    margin-top: 1.95rem
+    align-items: center
+
+.price
+    display: flex
+    flex-direction: column
+
+.total
+    font-size: 1.4rem
+    span
+        font-size: inherit
+        color: $main-color
+
+.options
+    margin-top: 0.43em
+    text-align: left
+    font-size: 0.7rem
+    span
+        font-size: inherit
+        color: $main-color
+
+.buy
+    display: block
+    width: 7.25rem
+    height: 2.4rem
+    transform: matrix(-1, 0, 0, -1, 0, 0)
+    background: transparent linear-gradient(255deg, #11998E 0%, #38EF7D 100%) 0% 0% no-repeat padding-box
+    border-radius: 8px
+    border: none
+    cursor: pointer
+    span
+        display: block
+        transform: rotate(180deg)
+        text-align: center
+        font-size: 0.5rem
+        letter-spacing: 0.2em
+        color: #FFFFFF
+        text-transform: uppercase
+
+@media (max-width: 992px)
+    .card
+        min-width: 18rem
+        max-width: 18rem

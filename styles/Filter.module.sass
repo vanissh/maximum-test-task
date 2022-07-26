@@ -1,0 +1,68 @@
+$main-color: #35373A
+
+.panel
+    padding: 1.3rem
+    background: #282A2E
+    min-height: 100vh
+    min-width: 20rem
+    max-width: 20rem
+
+.brand_filter
+    position: relative
+    display: inline-block
+    min-height: 2.8rem
+    width: 13.8rem
+    background-color: $main-color
+    border-radius: 4px 4px 0px 0px
+    font-size: 0.8rem
+    color: #FFFFFFDE
+    cursor: pointer
+    i
+        color: #707B8C
+        transform: rotate(0deg)
+        transition: all 0.3s
+        &.arrow_active
+            transform: rotate(90deg)
+            color: #FFFFFFDE
+
+.title
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem 0.7rem 0.85rem 0.7rem
+
+.dropdown
+    visibility: hidden
+    width: 100%
+    position: absolute
+    background-color: $main-color
+    opacity: 0
+    transition: all 0.3s
+    z-index: 1
+    a
+        padding: 0.7rem
+        text-decoration: none
+        display: block
+        font-size: 0.7rem
+        color: #BABABA
+        &:hover
+            background: #616161
+
+.dropdown_active
+    visibility: visible
+    opacity: 1
+
+@media (max-width: 1800px)
+    .panel
+        min-width: 18rem
+        max-width: 18rem
+
+@media (max-width: 1680px)
+    .panel
+        min-width: 17rem
+        max-width: 17rem
+
+@media (max-width: 1200px)
+    .panel
+        min-width: 100%
+        min-height: 2.8rem
